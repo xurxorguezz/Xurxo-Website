@@ -1,0 +1,105 @@
+body {
+    min-height: Calc(100vh - 100px);
+    display: flex;
+    background-image: url(../gif.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-position: bottom;
+}
+
+@font-face {
+    font-family: "Digital 7";
+    src: url("../digital-7.ttf");
+}
+
+.contenedor {
+    margin: auto;
+}
+
+.content-clock {
+    padding: 10px 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px 3px #c3c3c3;
+}
+
+.sound {
+    animation: 1s rebote infinite linear;
+}
+
+#btnStop {
+    display: none;
+}
+
+#audioTag {
+    display: none;
+}
+
+@keyframes rebote {
+    0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        transform: translateY(10px);
+    }
+    13%,
+    25%,
+    35%,
+    45%,
+    50%,
+    55%,
+    65%,
+    75%,
+    85%,
+    95% {
+        transform: translateY(-10px);
+    }
+}
+
+#clock {
+    border-radius: 10px;
+    background: #000000;
+    padding: 5px 10px;
+    color: red;
+    text-shadow: 1px 1px #e62e3e;
+    font-family: "Digital 7";
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#date {
+    background-color: #4e4c4c;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    box-shadow: inset 0px 0px 5px 1px #000000;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+#hour {
+    font-size: 40px;
+}
+
+#seconds {
+    font-size: 18px;
+    min-width: 30px;
+}
+
+.font-div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+}
