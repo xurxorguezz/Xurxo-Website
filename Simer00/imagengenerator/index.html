@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IA Generador de Imágenes</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Generador de Imágenes de Xurxo</h1>
+    <p>Escriba su mensaje aquí para generar imágenes con el poder de Ai.</p>
+    <form class="gen-form">
+      <input type="text" id="user-prompt" , placeholder="Escribe aquí el mensaje" autocomplete="off">
+      <button type="button" id="generate">Generar</button>
+    </form>
+
+    <div class="result">
+      <div id="loading">Generando...</div>
+      <div id="image-grid"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
